@@ -14,10 +14,6 @@ var TaskApp = React.createClass({
     this.setState({newTask:''});
   },
   handleTaskDelete: function(e){
-    console.log("parent notified of delete event");
-    console.log(e);
-
-
     var taskIndex = e.index;
     var x = this.state.items;
     x.splice(taskIndex,1);
@@ -26,7 +22,6 @@ var TaskApp = React.createClass({
   render: function() {
     return (
       <div>
-
         <h2> My Tasks</h2>
         <div>
           <form onSubmit={this.addTask}>
@@ -38,5 +33,4 @@ var TaskApp = React.createClass({
       </div>
     );
   }
-
 });
