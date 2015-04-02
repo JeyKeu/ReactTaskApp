@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="canvas"></div>
+
+	<!-- SCRIPTS -->
+<script src="js/vendor/react/react.js"></script>
+<script src="js/vendor/react/JSXTransformer.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script> -->
+<script type="text/jsx;harmony=true" src="js/components/TaskApp/TaskList.jsx"></script>
+<script type="text/jsx;harmony=true" src="js/components/TaskApp/TaskApp.jsx"></script>
+
+
+<script type="text/jsx;harmony=true">
+
+var items=[
+
+	{
+		'title': 'Item 1 Title',
+		'slug':'item1',
+		'website':'http://item1.com'
+	},
+	{
+		'title': 'Item 2 Title',
+		'slug':'item2',
+		'website':'http://item2.com'
+	}
+];
+
+React.render(<TaskApp />, document.getElementById('canvas'));
+
+</script>
+</body>
+</html>
